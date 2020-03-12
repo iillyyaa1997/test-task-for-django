@@ -7,4 +7,5 @@ urlpatterns = [
     path('list/', views.UserListView.as_view()),
     path('<int:pk>', views.UserRetrieveDestroyAPIView.as_view()),
     path('update/<int:pk>', views.UserUpdateView.as_view()),
+    path('upload_photo/<int:pk>', views.UserUploadPhotoView.as_view()),
 ]

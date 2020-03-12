@@ -26,3 +26,9 @@ class UserListSerializer(serializers.ModelSerializer):
 
 class UserListSerializerQP(serializers.Serializer):
     departament_id = serializers.IntegerField(allow_null=True, default=None)
+
+
+class UserUploadPhotoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['photo']
